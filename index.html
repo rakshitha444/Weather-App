@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudy - Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Cloudy</h1>
+            <p>Your personal weather companion</p>
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-button">Search</button>
+            </div>
+        </header>
+        <main>
+            <div class="weather-container">
+                <div class="current-weather">
+                    <h2 id="city-name">City Name</h2>
+                    <h3 id="temperature">--°C</h3>
+                    <p id="description">Loading weather...</p>
+                </div>
+                <div class="additional-info">
+                    <div class="weather-icon" id="weather-icon">
+                        <!-- Weather icon will be injected here -->
+                    </div>
+                    <div class="weather-highlights">
+                        <p><strong>Wind Speed:</strong> <span id="wind-speed">-- m/s</span></p>
+                        <p><strong>UV Index:</strong> <span id="uv-index">--</span></p>
+                        <p><strong>Visibility:</strong> <span id="visibility">-- km</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hourly-forecast" id="hourly-forecast">
+                <h3>Hourly Forecast</h3>
+                <div class="forecast-cards" id="forecast-cards">
+                    <!-- Hourly forecast cards will be injected here -->
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <h2>Weather Updates for Major Cities</h2>
+            <div id="popular-cities" class="popular-cities">
+                <!-- Weather cards will be injected dynamically here -->
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
